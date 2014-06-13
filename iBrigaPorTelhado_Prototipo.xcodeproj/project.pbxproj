@@ -36,6 +36,7 @@
 		F29E0C07194B75B000635CAD /* BPTCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C06194B75B000635CAD /* BPTCharacter.m */; };
 		F29E0C0A194B75D900635CAD /* BPTScenarioObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C09194B75D900635CAD /* BPTScenarioObject.m */; };
 		F29E0C0D194B75E900635CAD /* BPTUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */; };
+		F2DD711B194B7A4F00BEDBC5 /* BPTGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DD711A194B7A4F00BEDBC5 /* BPTGameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,10 @@
 		F29E0C09194B75D900635CAD /* BPTScenarioObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTScenarioObject.m; sourceTree = "<group>"; };
 		F29E0C0B194B75E900635CAD /* BPTUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTUpdateManager.h; sourceTree = "<group>"; };
 		F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTUpdateManager.m; sourceTree = "<group>"; };
+		F2DD7119194B7A4F00BEDBC5 /* BPTGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTGameController.h; sourceTree = "<group>"; };
+		F2DD711A194B7A4F00BEDBC5 /* BPTGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTGameController.m; sourceTree = "<group>"; };
+		F2DD711D194B824200BEDBC5 /* BPTImportControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTImportControllers.h; sourceTree = "<group>"; };
+		F2DD711E194B8DCC00BEDBC5 /* BPTImportAllModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTImportAllModels.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +217,7 @@
 		F29E0BE8194B718300635CAD /* Game Scene */ = {
 			isa = PBXGroup;
 			children = (
+				F2DD711C194B822800BEDBC5 /* Packages */,
 				F29E0BEB194B720B00635CAD /* Models */,
 				F29E0BEC194B721900635CAD /* Views */,
 				F29E0BEA194B71F000635CAD /* Controllers */,
@@ -230,6 +236,8 @@
 		F29E0BEA194B71F000635CAD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2DD7119194B7A4F00BEDBC5 /* BPTGameController.h */,
+				F2DD711A194B7A4F00BEDBC5 /* BPTGameController.m */,
 				F29E0BED194B73C300635CAD /* BPTControllerEvents.h */,
 				F29E0BEE194B73C400635CAD /* BPTControllerEvents.m */,
 				F29E0BF0194B747200635CAD /* BPTControllerCharacters.h */,
@@ -270,6 +278,15 @@
 				F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F2DD711C194B822800BEDBC5 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD711D194B824200BEDBC5 /* BPTImportControllers.h */,
+				F2DD711E194B8DCC00BEDBC5 /* BPTImportAllModels.h */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +393,7 @@
 				F25BEE57194B6F7700C33B87 /* ViewController.m in Sources */,
 				F29E0BF5194B749F00635CAD /* BPTControllerVision.m in Sources */,
 				F29E0BE7194B717B00635CAD /* GameStateManager.m in Sources */,
+				F2DD711B194B7A4F00BEDBC5 /* BPTGameController.m in Sources */,
 				F29E0BEF194B73C400635CAD /* BPTControllerEvents.m in Sources */,
 				F29E0C0A194B75D900635CAD /* BPTScenarioObject.m in Sources */,
 				F29E0BF8194B74C600635CAD /* BPTControllerMap.m in Sources */,

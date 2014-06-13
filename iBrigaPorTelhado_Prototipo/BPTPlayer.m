@@ -10,4 +10,12 @@
 
 @implementation BPTPlayer
 
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.allCharacters = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
 @end

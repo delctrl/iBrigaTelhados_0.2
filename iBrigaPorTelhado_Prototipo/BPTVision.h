@@ -10,4 +10,6 @@
 
 @interface BPTVision : NSObject
 
+@property NSMutableDictionary *visionMatrix;
+
 @end

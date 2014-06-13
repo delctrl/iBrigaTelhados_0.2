@@ -1,0 +1,6 @@
+#import "BPTPlayer.h"
+#import "BPTVision.h"
+#import "BPTMap.h"
+#import "BPTGameComponent.h"
+#import "BPTCharacter.h"
+#import "BPTScenarioObject.h"

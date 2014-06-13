@@ -6,8 +6,12 @@
 //  Copyright (c) 2014 LEONARDO LEGRADY SALGADO GIGLIOTTI. All rights reserved.
 //
 
+#import <SpriteKit/SpriteKit.h>
 #import <Foundation/Foundation.h>
 
 @interface BPTGameComponent : NSObject
+
+@property int identifier;
+@property SKNode *sprite;
 
 @end

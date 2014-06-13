@@ -10,5 +10,4 @@
 
 @interface BPTControllerCharacters : NSObject
 
-- (id) init;
 @end

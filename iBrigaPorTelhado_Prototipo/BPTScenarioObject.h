@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 LEONARDO LEGRADY SALGADO GIGLIOTTI. All rights reserved.
 //
 
+#import "BPTGameComponent.h"
 #import <Foundation/Foundation.h>
 
-@interface BPTScenarioObject : NSObject
+@interface BPTScenarioObject : BPTGameComponent
 
 @end
