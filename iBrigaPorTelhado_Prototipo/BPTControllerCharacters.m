@@ -10,6 +10,8 @@
 
 @implementation BPTControllerCharacters
 
+static bool charIsSelected = FALSE;
+
 - (id) init {
     NSLog(@"You are trying to allocate a pseudo-abstract class. Please look into your code and refactor it.");
     NSLog(@"For more information about the class, check BPTControllerCharacters.");

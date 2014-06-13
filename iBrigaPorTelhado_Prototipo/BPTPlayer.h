@@ -10,4 +10,6 @@
 
 @interface BPTPlayer : NSObject
 
+@property NSMutableDictionary *allCharacters;
+
 @end

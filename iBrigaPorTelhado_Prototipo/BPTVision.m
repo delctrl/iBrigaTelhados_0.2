@@ -10,4 +10,12 @@
 
 @implementation BPTVision
 
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.visionMatrix = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
 @end
