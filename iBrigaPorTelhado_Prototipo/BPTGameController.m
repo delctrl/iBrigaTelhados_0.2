@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         self.map = [[BPTMap alloc] init];
+        [BPTUpdateManager setMapNeedUpdate:YES];
         self.player = [[BPTPlayer alloc] init];
         self.vision = [[BPTVision alloc] init];
         

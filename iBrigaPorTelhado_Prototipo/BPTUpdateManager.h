@@ -10,4 +10,6 @@
 
 @interface BPTUpdateManager : NSObject
 
++ (void) setMapNeedUpdate : (BOOL) condition;
++ (BOOL) mapNeedUpdate;
 @end

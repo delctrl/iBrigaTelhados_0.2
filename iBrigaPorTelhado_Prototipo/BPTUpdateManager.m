@@ -10,4 +10,14 @@
 
 @implementation BPTUpdateManager
 
+bool mapNeedUpdate;
+
++ (void) setMapNeedUpdate : (BOOL) condition {
+    mapNeedUpdate = condition;
+}
+
++ (BOOL) mapNeedUpdate {
+    return mapNeedUpdate;
+}
+
 @end
