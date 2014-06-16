@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B62A940194F6A3500D4D62A /* BPTMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B62A93F194F6A3500D4D62A /* BPTMapTests.m */; };
 		F25BEE3C194B6F7700C33B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3B194B6F7700C33B87 /* Foundation.framework */; };
 		F25BEE3E194B6F7700C33B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */; };
 		F25BEE40194B6F7700C33B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3F194B6F7700C33B87 /* UIKit.framework */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B62A93F194F6A3500D4D62A /* BPTMapTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTMapTests.m; sourceTree = "<group>"; };
 		F25BEE38194B6F7700C33B87 /* iBrigaPorTelhado_Prototipo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrigaPorTelhado_Prototipo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25BEE3B194B6F7700C33B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */,
+				5B62A93F194F6A3500D4D62A /* BPTMapTests.m */,
 				F25BEE6B194B6F7700C33B87 /* Supporting Files */,
 			);
 			path = iBrigaPorTelhado_PrototipoTests;
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25BEE71194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m in Sources */,
+				5B62A940194F6A3500D4D62A /* BPTMapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
