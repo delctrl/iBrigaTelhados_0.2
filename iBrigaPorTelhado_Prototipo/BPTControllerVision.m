@@ -10,9 +10,13 @@
 
 @implementation BPTControllerVision
 
+@synthesize updateNeeded;
+
 - (id) init {
-    NSLog(@"You are trying to allocate a pseudo-abstract class. Please look into your code and refactor it.");
-    NSLog(@"For more information about the class, check BPTControllerVision.");
-    return nil;
+    self = [super init];
+    if (self) {
+        self.updateNeeded = YES;
+    }
+    return self;
 }
 @end

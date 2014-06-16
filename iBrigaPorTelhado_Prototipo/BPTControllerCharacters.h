@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BPTUpdateManagerProtocol.h"
 
-@interface BPTControllerCharacters : NSObject
+@interface BPTControllerCharacters : NSObject <BPTUpdateManagerProtocol>
+
+@property bool charIsSelected;
+
+@property NSMutableDictionary *playerCharacters;
+@property NSMutableDictionary *enemyCharacters;
 
 @end

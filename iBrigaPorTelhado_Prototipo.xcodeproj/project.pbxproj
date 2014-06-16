@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B62A940194F6A3500D4D62A /* BPTMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B62A93F194F6A3500D4D62A /* BPTMapTests.m */; };
 		F25BEE3C194B6F7700C33B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3B194B6F7700C33B87 /* Foundation.framework */; };
 		F25BEE3E194B6F7700C33B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */; };
 		F25BEE40194B6F7700C33B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3F194B6F7700C33B87 /* UIKit.framework */; };
@@ -36,7 +35,6 @@
 		F29E0C04194B757200635CAD /* BPTGameComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C03194B757200635CAD /* BPTGameComponent.m */; };
 		F29E0C07194B75B000635CAD /* BPTCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C06194B75B000635CAD /* BPTCharacter.m */; };
 		F29E0C0A194B75D900635CAD /* BPTScenarioObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C09194B75D900635CAD /* BPTScenarioObject.m */; };
-		F29E0C0D194B75E900635CAD /* BPTUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */; };
 		F2DD711B194B7A4F00BEDBC5 /* BPTGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DD711A194B7A4F00BEDBC5 /* BPTGameController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B62A93F194F6A3500D4D62A /* BPTMapTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTMapTests.m; sourceTree = "<group>"; };
 		F25BEE38194B6F7700C33B87 /* iBrigaPorTelhado_Prototipo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrigaPorTelhado_Prototipo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25BEE3B194B6F7700C33B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +72,7 @@
 		F25BEE6C194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBrigaPorTelhado_PrototipoTests-Info.plist"; sourceTree = "<group>"; };
 		F25BEE6E194B6F7700C33B87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBrigaPorTelhado_PrototipoTests.m; sourceTree = "<group>"; };
+		F2944019194F8143008C4A32 /* BPTUpdateManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTUpdateManagerProtocol.h; sourceTree = "<group>"; };
 		F29E0BE5194B717B00635CAD /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
 		F29E0BE6194B717B00635CAD /* GameStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStateManager.m; sourceTree = "<group>"; };
 		F29E0BED194B73C300635CAD /* BPTControllerEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTControllerEvents.h; sourceTree = "<group>"; };
@@ -97,12 +95,10 @@
 		F29E0C06194B75B000635CAD /* BPTCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTCharacter.m; sourceTree = "<group>"; };
 		F29E0C08194B75D900635CAD /* BPTScenarioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTScenarioObject.h; sourceTree = "<group>"; };
 		F29E0C09194B75D900635CAD /* BPTScenarioObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTScenarioObject.m; sourceTree = "<group>"; };
-		F29E0C0B194B75E900635CAD /* BPTUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTUpdateManager.h; sourceTree = "<group>"; };
-		F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTUpdateManager.m; sourceTree = "<group>"; };
 		F2DD7119194B7A4F00BEDBC5 /* BPTGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTGameController.h; sourceTree = "<group>"; };
 		F2DD711A194B7A4F00BEDBC5 /* BPTGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTGameController.m; sourceTree = "<group>"; };
-		F2DD711D194B824200BEDBC5 /* BPTImportControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTImportControllers.h; sourceTree = "<group>"; };
 		F2DD711E194B8DCC00BEDBC5 /* BPTImportAllModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTImportAllModels.h; sourceTree = "<group>"; };
+		F2E87C99194F8D0800AA0942 /* BPTImportAllControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTImportAllControllers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */,
-				5B62A93F194F6A3500D4D62A /* BPTMapTests.m */,
 				F25BEE6B194B6F7700C33B87 /* Supporting Files */,
 			);
 			path = iBrigaPorTelhado_PrototipoTests;
@@ -249,6 +244,7 @@
 				F29E0BF4194B749F00635CAD /* BPTControllerVision.m */,
 				F29E0BF6194B74C600635CAD /* BPTControllerMap.h */,
 				F29E0BF7194B74C600635CAD /* BPTControllerMap.m */,
+				F2944019194F8143008C4A32 /* BPTUpdateManagerProtocol.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -277,8 +273,6 @@
 			children = (
 				F25BEE58194B6F7700C33B87 /* BPTGameScene.h */,
 				F25BEE59194B6F7700C33B87 /* BPTGameScene.m */,
-				F29E0C0B194B75E900635CAD /* BPTUpdateManager.h */,
-				F29E0C0C194B75E900635CAD /* BPTUpdateManager.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -286,8 +280,8 @@
 		F2DD711C194B822800BEDBC5 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				F2DD711D194B824200BEDBC5 /* BPTImportControllers.h */,
 				F2DD711E194B8DCC00BEDBC5 /* BPTImportAllModels.h */,
+				F2E87C99194F8D0800AA0942 /* BPTImportAllControllers.h */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -391,7 +385,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29E0C07194B75B000635CAD /* BPTCharacter.m in Sources */,
-				F29E0C0D194B75E900635CAD /* BPTUpdateManager.m in Sources */,
 				F25BEE5A194B6F7700C33B87 /* BPTGameScene.m in Sources */,
 				F25BEE57194B6F7700C33B87 /* ViewController.m in Sources */,
 				F29E0BF5194B749F00635CAD /* BPTControllerVision.m in Sources */,
@@ -415,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25BEE71194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m in Sources */,
-				5B62A940194F6A3500D4D62A /* BPTMapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

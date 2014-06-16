@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BPTUpdateManagerProtocol.h"
 
-@interface BPTControllerVision : NSObject
+@interface BPTControllerVision : NSObject <BPTUpdateManagerProtocol>
 
 - (id) init;
 @end

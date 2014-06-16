@@ -24,18 +24,18 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    if ([BPTUpdateManager mapNeedUpdate]) {
+    if (gameController.mapController.updateNeeded) {
         [self updateMap];
     }
 }
 
 - (void) updateMap {
-    NSMutableDictionary *auxDictionary = gameController.map.tileSpritesMatrix;
+    NSMutableDictionary *auxDictionary = gameController.mapController.map.tileSpritesMatrix;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             [self addChild: [auxDictionary objectForKey: [NSString stringWithFormat:@"%i%i", i, j]]];
         }
     }
-    [BPTUpdateManager setMapNeedUpdate:NO];
+    [gameController.mapController setUpdateNeeded:NO];
 }
 @end

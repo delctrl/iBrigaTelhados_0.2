@@ -10,11 +10,23 @@
 
 @implementation BPTControllerCharacters
 
-static bool charIsSelected = FALSE;
+@synthesize updateNeeded;
 
 - (id) init {
-    NSLog(@"You are trying to allocate a pseudo-abstract class. Please look into your code and refactor it.");
-    NSLog(@"For more information about the class, check BPTControllerCharacters.");
-    return nil;
+    self = [super init];
+    if (self) {
+        [self setCharIsSelected:FALSE];
+        self.updateNeeded = YES;
+        
+        [self createPlayerCharacters];
+        [self createEnemyCharacters];
+    }
+    return self;
+}
+
+- (void) createPlayerCharacters {
+}
+
+- (void) createEnemyCharacters {
 }
 @end
