@@ -6,3 +6,11 @@
 #
 # Pods/
 
+
+*.xccheckout
+
+*.xcuserstate
+
+*.xcscheme
+
+*.plist
