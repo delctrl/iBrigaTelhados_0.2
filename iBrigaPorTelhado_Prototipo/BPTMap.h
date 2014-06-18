@@ -7,6 +7,7 @@
 //
 
 #import "BPTGameComponent.h"
+#import "BPTCharacter.h"
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 
@@ -15,4 +16,6 @@
 @property NSMutableDictionary *tileSpritesMatrix;
 @property NSMutableDictionary *charactersAndObjectsMatrix;
 
+
+- (void) addCharacter:(BPTGameComponent*) component AtPosition:(CGPoint) position;
 @end

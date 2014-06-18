@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BPTUpdateManagerProtocol.h"
+#import "BPTCharacter.h"
 
 @interface BPTControllerCharacters : NSObject <BPTUpdateManagerProtocol>
 

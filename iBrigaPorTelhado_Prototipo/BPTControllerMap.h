@@ -13,5 +13,6 @@
 
 @property BPTMap *map;
 
-- (id) init;    
+- (id) init;
+- (void) addPlayerCharacterToMap:(NSMutableDictionary*) characterList;
 @end

@@ -10,4 +10,12 @@
 
 @implementation BPTCharacter
 
+- (id) initWithTexture: (NSString *) textureName {
+    self = [super init];
+    if(self){
+        self.sprite  = [[SKSpriteNode alloc ]initWithTexture:[SKTexture textureWithImageNamed:textureName]];
+    }
+    return self;
+}
+
 @end

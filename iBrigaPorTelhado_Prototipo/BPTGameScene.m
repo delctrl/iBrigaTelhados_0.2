@@ -36,6 +36,17 @@
             [self addChild: [auxDictionary objectForKey: [NSString stringWithFormat:@"%i%i", i, j]]];
         }
     }
+    
+    auxDictionary = gameController.mapController.map.charactersAndObjectsMatrix;
+    for (int i=0; i<5; i++) {
+        for (int j = 0; j < 5; j++) {
+            BPTGameComponent *component = [auxDictionary objectForKey:[NSString stringWithFormat:@"%i%i", i, j]];
+            if (component) {
+                [self addChild:component.sprite];
+            }
+        }
+    }
     [gameController.mapController setUpdateNeeded:NO];
 }
+
 @end

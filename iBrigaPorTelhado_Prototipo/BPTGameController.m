@@ -14,7 +14,11 @@
     self = [super init];
     if (self) {
         self.mapController = [[BPTControllerMap alloc] init];
+        self.characterController = [[BPTControllerCharacters alloc] init];
         
+        [self.mapController addPlayerCharacterToMap:self.characterController.playerCharacters];
+        
+        //Não esta sendo usado
         self.player = [[BPTPlayer alloc] init];
         self.vision = [[BPTVision alloc] init];
         

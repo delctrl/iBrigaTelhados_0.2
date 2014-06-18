@@ -8,6 +8,7 @@
 
 #import "BPTControllerCharacters.h"
 
+
 @implementation BPTControllerCharacters
 
 @synthesize updateNeeded;
@@ -25,8 +26,15 @@
 }
 
 - (void) createPlayerCharacters {
+    self.playerCharacters = [[NSMutableDictionary alloc] init];
+    for (int i = 0; i < 3 ; i++){
+        BPTCharacter *character = [[BPTCharacter alloc] initWithTexture:@"hunter.png"];
+        [self.playerCharacters  setObject:character forKey: [NSString stringWithFormat:@"P%i", i ]];
+        
+    }
 }
 
 - (void) createEnemyCharacters {
 }
+
 @end

@@ -20,4 +20,14 @@
     }
     return self;
 }
+
+- (void) addPlayerCharacterToMap:(NSMutableDictionary*) characterList{
+    int x, y;
+    x = y = 0;
+    for (;x<characterList.count;x++) {
+        BPTCharacter *character = [characterList objectForKey:[NSString stringWithFormat:@"P%i", x]];
+        [self.map addCharacter:character AtPosition:CGPointMake(x, y)];
+    }
+    self.updateNeeded = YES;
+}
 @end

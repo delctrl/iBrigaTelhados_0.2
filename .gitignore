@@ -14,3 +14,7 @@
 *.xcscheme
 
 *.plist
+
+*.xcbkptlist
+
+*.xcsettings

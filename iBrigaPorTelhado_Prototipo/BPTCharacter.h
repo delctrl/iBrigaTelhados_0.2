@@ -11,4 +11,6 @@
 
 @interface BPTCharacter : BPTGameComponent
 
+- (id) initWithTexture: (NSString *) textureName;
+
 @end

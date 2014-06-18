@@ -12,6 +12,6 @@
 @interface BPTGameComponent : NSObject
 
 @property int identifier;
-@property SKNode *sprite;
+@property SKSpriteNode *sprite;
 
 @end

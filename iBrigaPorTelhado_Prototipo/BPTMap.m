@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         [self createTileNodes];
+        self.charactersAndObjectsMatrix = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -33,6 +34,11 @@
     }
     
     self.tileSpritesMatrix = [[NSMutableDictionary alloc] initWithObjects:spriteArray forKeys:posArray];
+}
+
+- (void) addCharacter:(BPTCharacter*) character AtPosition:(CGPoint) position{
+    character.sprite.position = [self getIsoPosition:CGPointMake(position.x*70, position.y*70)];
+    [self.charactersAndObjectsMatrix setObject:character forKey:[NSString stringWithFormat:@"%.f%.f", position.x, position.y]];
 }
 
 - (CGPoint) getIsoPosition: (CGPoint) pt {
