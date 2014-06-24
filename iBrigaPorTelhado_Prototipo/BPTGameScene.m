@@ -10,43 +10,46 @@
 
 @implementation BPTGameScene
 
--(id)initWithSize:(CGSize)size {    
+- (id) initWithSize: (CGSize)size {
     if (self = [super initWithSize:size]) {
         gameController = [[BPTGameController alloc] init];
+        [self createMap];
     }
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void) touchesBegan: (NSSet *)touches withEvent: (UIEvent *)event {
     if (touches.count != 1) {
         return;
     }
+    UITouch *touchedPoint = [touches anyObject];
+    
+    [gameController delegateEvent: [touchedPoint locationInNode: self]];
 }
 
--(void)update:(CFTimeInterval)currentTime {
-    if (gameController.mapController.updateNeeded) {
-        [self updateMap];
-    }
-}
-
-- (void) updateMap {
-    NSMutableDictionary *auxDictionary = gameController.mapController.map.tileSpritesMatrix;
+- (void) createMap {
+    NSMutableDictionary *tilesDictionary = gameController.mapController.map.tileSpritesMatrix;
+    NSMutableDictionary *componentsDictionary = gameController.mapController.map.charactersAndObjectsMatrix;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            [self addChild: [auxDictionary objectForKey: [NSString stringWithFormat:@"%i%i", i, j]]];
-        }
-    }
-    
-    auxDictionary = gameController.mapController.map.charactersAndObjectsMatrix;
-    for (int i=0; i<5; i++) {
-        for (int j = 0; j < 5; j++) {
-            BPTGameComponent *component = [auxDictionary objectForKey:[NSString stringWithFormat:@"%i%i", i, j]];
+            [self addChild: [tilesDictionary objectForKey: [NSString stringWithFormat:@"%i%i", i, j]]];
+            BPTGameComponent *component = [componentsDictionary objectForKey:[NSString stringWithFormat:@"%i%i", i, j]];
             if (component) {
                 [self addChild:component.sprite];
             }
         }
     }
     [gameController.mapController setUpdateNeeded:NO];
+}
+
+- (void) update: (CFTimeInterval)currentTime {
+    if (gameController.mapController.updateNeeded) {
+        [self updateMap];
+    }
+}
+
+- (void) updateMap {
+    
 }
 
 @end

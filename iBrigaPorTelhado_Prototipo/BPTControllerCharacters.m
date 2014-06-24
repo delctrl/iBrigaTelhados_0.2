@@ -19,6 +19,7 @@
         [self setCharIsSelected:FALSE];
         self.updateNeeded = YES;
         
+        /** Versão incompleta! **/
         [self createPlayerCharacters];
         [self createEnemyCharacters];
     }
@@ -29,8 +30,10 @@
     self.playerCharacters = [[NSMutableDictionary alloc] init];
     for (int i = 0; i < 3 ; i++){
         BPTCharacter *character = [[BPTCharacter alloc] initWithTexture:@"hunter.png"];
-        [self.playerCharacters  setObject:character forKey: [NSString stringWithFormat:@"P%i", i ]];
-        
+        character.identifier = 1;
+        int x = i;
+        int y = i;
+        [self.playerCharacters setObject:character forKey: [NSString stringWithFormat:@"%i%i", x, y]];
     }
 }
 

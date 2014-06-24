@@ -21,4 +21,6 @@
 @property BPTControllerMap *mapController;
 @property BPTControllerEvents *eventsController;
 
+
+- (void) delegateEvent: (CGPoint) touch;
 @end

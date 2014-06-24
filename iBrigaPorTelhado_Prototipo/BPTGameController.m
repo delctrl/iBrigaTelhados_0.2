@@ -16,11 +16,12 @@
         self.mapController = [[BPTControllerMap alloc] init];
         self.characterController = [[BPTControllerCharacters alloc] init];
         
-        [self.mapController addPlayerCharacterToMap:self.characterController.playerCharacters];
+        [self.mapController addPlayerCharactersToMap:self.characterController.playerCharacters];
         
+        self.eventsController = [[BPTControllerEvents alloc] initWithMap: self.mapController.map];
         //Não esta sendo usado
-        self.player = [[BPTPlayer alloc] init];
-        self.vision = [[BPTVision alloc] init];
+//        self.player = [[BPTPlayer alloc] init];
+//        self.vision = [[BPTVision alloc] init];
         
         /** Prototype only! **/
         [self initEnemy];
@@ -31,7 +32,10 @@
 
 - (void) initEnemy {
     self.enemyCharacters = [[NSMutableArray alloc] init];
-    
     /** Prototype only! | Add enemies here! **/
+}
+
+- (void) delegateEvent: (CGPoint) touch {
+    [self.eventsController receiveTouch: touch];
 }
 @end
