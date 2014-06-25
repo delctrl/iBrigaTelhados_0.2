@@ -36,22 +36,6 @@
 }
 
 - (void) delegateEvent: (CGPoint) touch {
-    NSDictionary *objectReceived = [self.eventsController receiveTouch: touch];
-    
-    if ([objectReceived objectForKey:@"0"] != nil) {
-        NSLog(@"tile");
-        [self characterReceived: [objectReceived objectForKey:@"0"]];
-    }
-    if ([objectReceived objectForKey:@"1"] != nil) {
-        NSLog(@"char");
-    }
-}
-
-- (void) characterReceived: (BPTCharacter *) character{
-    
-}
-
-- (void) tileReceived: (SKSpriteNode *) tile{
-    
+    [self.eventsController receiveTouch: touch];
 }
 @end

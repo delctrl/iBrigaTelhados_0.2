@@ -11,7 +11,6 @@
 
 @interface BPTGameScene : SKScene {
     BPTGameController *gameController;
-    BOOL hasUpdated;
 }
 
 @end
