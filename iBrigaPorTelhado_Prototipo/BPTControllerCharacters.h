@@ -12,9 +12,11 @@
 
 @interface BPTControllerCharacters : NSObject <BPTUpdateManagerProtocol>
 
-@property bool charIsSelected;
+@property BPTCharacter *characterSelected;
 
 @property NSMutableDictionary *playerCharacters;
 @property NSMutableDictionary *enemyCharacters;
 
+
+- (void) selectCharacter: (BPTCharacter *) character;
 @end

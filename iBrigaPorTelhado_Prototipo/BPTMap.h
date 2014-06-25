@@ -14,7 +14,7 @@
 @interface BPTMap : NSObject
 
 @property NSMutableDictionary *tileSpritesMatrix;
-@property NSMutableDictionary *charactersAndObjectsMatrix;
+@property NSMutableDictionary *componentMatrix;
 
 
 - (void) addCharacter:(BPTGameComponent*) component AtPosition:(CGPoint) position;

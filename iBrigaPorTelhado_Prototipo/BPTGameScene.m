@@ -30,7 +30,7 @@
 
 - (void) createMap {
     NSMutableDictionary *tilesDictionary = gameController.mapController.map.tileSpritesMatrix;
-    NSMutableDictionary *componentsDictionary = gameController.mapController.map.charactersAndObjectsMatrix;
+    NSMutableDictionary *componentsDictionary = gameController.mapController.map.componentMatrix;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             [self addChild: [tilesDictionary objectForKey: [NSString stringWithFormat:@"%i%i", i, j]]];

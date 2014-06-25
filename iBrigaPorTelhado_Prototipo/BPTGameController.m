@@ -40,18 +40,28 @@
     
     if ([objectReceived objectForKey:@"0"] != nil) {
         NSLog(@"tile");
-        [self characterReceived: [objectReceived objectForKey:@"0"]];
+        [self tileReceived: [objectReceived objectForKey:@"0"]];
     }
     if ([objectReceived objectForKey:@"1"] != nil) {
         NSLog(@"char");
+        [self characterReceived: [objectReceived objectForKey:@"1"]];
     }
 }
 
 - (void) characterReceived: (BPTCharacter *) character{
-    
+    if (self.characterController.characterSelected == nil) {
+        [self.characterController selectCharacter: character];
+    }
 }
 
 - (void) tileReceived: (SKSpriteNode *) tile{
-    
+    if (self.characterController.characterSelected != nil) {
+        CGPoint characterPos = [self.mapController getComponentPosAtMatrix: self.characterController.characterSelected];
+        CGPoint tilePos = [self.mapController getTilePosAtMatrix: tile];
+        
+        if ([self.mapController checkIfMovementIsPossibleForCharacter:characterPos ToTile:tilePos]) {
+            NSLog(@"ok");
+        }
+    }
 }
 @end

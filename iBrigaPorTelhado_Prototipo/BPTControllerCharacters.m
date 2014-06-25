@@ -16,7 +16,6 @@
 - (id) init {
     self = [super init];
     if (self) {
-        [self setCharIsSelected:FALSE];
         self.updateNeeded = YES;
         
         /** Versão incompleta! **/
@@ -38,6 +37,11 @@
 }
 
 - (void) createEnemyCharacters {
+    
+}
+
+- (void) selectCharacter: (BPTCharacter *) character {
+    self.characterSelected = character;
 }
 
 @end

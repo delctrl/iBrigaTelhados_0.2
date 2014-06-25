@@ -23,7 +23,7 @@
 }
 
 - (NSDictionary *) checkWhatIsTouched: (CGPoint) touch {
-    NSMutableDictionary *characterDictionary = self.map.charactersAndObjectsMatrix;
+    NSMutableDictionary *characterDictionary = self.map.componentMatrix;
     NSMutableDictionary *tilesDictionary = self.map.tileSpritesMatrix;
     SKSpriteNode *auxSprite;
 

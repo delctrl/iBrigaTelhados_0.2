@@ -15,4 +15,10 @@
 
 - (id) init;
 - (void) addPlayerCharactersToMap:(NSMutableDictionary*) characterList;
+
+- (BOOL) checkIfMovementIsPossibleForCharacter: (CGPoint) characterPos ToTile: (CGPoint) tilePos;
+- (BOOL) checkIfTileIsEmpty: (CGPoint) tilePos;
+
+- (CGPoint) getTilePosAtMatrix: (SKSpriteNode *) tile;
+- (CGPoint) getComponentPosAtMatrix: (BPTGameComponent *) component;
 @end
