@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB290C40195B499900F44CF0 /* BPTComponentSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB290C3F195B499900F44CF0 /* BPTComponentSpriteNode.m */; };
-		BB398608195B4CD6001D5C70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB398607195B4CD6001D5C70 /* Images.xcassets */; };
+		5B897C5A195B621800AE8C98 /* BPTMapController_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B897C59195B621800AE8C98 /* BPTMapController_Tests.m */; };
+		5B897C5C195B6AF800AE8C98 /* BPTControllerEvents_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B897C5B195B6AF800AE8C98 /* BPTControllerEvents_Tests.m */; };
 		F25BEE3C194B6F7700C33B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3B194B6F7700C33B87 /* Foundation.framework */; };
 		F25BEE3E194B6F7700C33B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */; };
 		F25BEE40194B6F7700C33B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3F194B6F7700C33B87 /* UIKit.framework */; };
@@ -20,11 +20,11 @@
 		F25BEE54194B6F7700C33B87 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25BEE52194B6F7700C33B87 /* Main_iPad.storyboard */; };
 		F25BEE57194B6F7700C33B87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BEE56194B6F7700C33B87 /* ViewController.m */; };
 		F25BEE5A194B6F7700C33B87 /* BPTGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BEE59194B6F7700C33B87 /* BPTGameScene.m */; };
+		F25BEE5E194B6F7700C33B87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25BEE5D194B6F7700C33B87 /* Images.xcassets */; };
 		F25BEE65194B6F7700C33B87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE64194B6F7700C33B87 /* XCTest.framework */; };
 		F25BEE66194B6F7700C33B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3B194B6F7700C33B87 /* Foundation.framework */; };
 		F25BEE67194B6F7700C33B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3F194B6F7700C33B87 /* UIKit.framework */; };
 		F25BEE6F194B6F7700C33B87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F25BEE6D194B6F7700C33B87 /* InfoPlist.strings */; };
-		F25BEE71194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */; };
 		F29E0BE7194B717B00635CAD /* GameStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0BE6194B717B00635CAD /* GameStateManager.m */; };
 		F29E0BEF194B73C400635CAD /* BPTControllerEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0BEE194B73C400635CAD /* BPTControllerEvents.m */; };
 		F29E0BF2194B747200635CAD /* BPTControllerCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E0BF1194B747200635CAD /* BPTControllerCharacters.m */; };
@@ -50,9 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB290C3E195B499900F44CF0 /* BPTComponentSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTComponentSpriteNode.h; sourceTree = "<group>"; };
-		BB290C3F195B499900F44CF0 /* BPTComponentSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTComponentSpriteNode.m; sourceTree = "<group>"; };
-		BB398607195B4CD6001D5C70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B897C59195B621800AE8C98 /* BPTMapController_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTMapController_Tests.m; sourceTree = "<group>"; };
+		5B897C5B195B6AF800AE8C98 /* BPTControllerEvents_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTControllerEvents_Tests.m; sourceTree = "<group>"; };
 		F25BEE38194B6F7700C33B87 /* iBrigaPorTelhado_Prototipo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrigaPorTelhado_Prototipo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25BEE3B194B6F7700C33B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F25BEE3D194B6F7700C33B87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,11 +69,11 @@
 		F25BEE56194B6F7700C33B87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F25BEE58194B6F7700C33B87 /* BPTGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTGameScene.h; sourceTree = "<group>"; };
 		F25BEE59194B6F7700C33B87 /* BPTGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPTGameScene.m; sourceTree = "<group>"; };
+		F25BEE5D194B6F7700C33B87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F25BEE63194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBrigaPorTelhado_PrototipoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25BEE64194B6F7700C33B87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F25BEE6C194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBrigaPorTelhado_PrototipoTests-Info.plist"; sourceTree = "<group>"; };
 		F25BEE6E194B6F7700C33B87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBrigaPorTelhado_PrototipoTests.m; sourceTree = "<group>"; };
 		F2944019194F8143008C4A32 /* BPTUpdateManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPTUpdateManagerProtocol.h; sourceTree = "<group>"; };
 		F29E0BE5194B717B00635CAD /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
 		F29E0BE6194B717B00635CAD /* GameStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStateManager.m; sourceTree = "<group>"; };
@@ -187,7 +186,8 @@
 		F25BEE6A194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F25BEE70194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m */,
+				5B897C59195B621800AE8C98 /* BPTMapController_Tests.m */,
+				5B897C5B195B6AF800AE8C98 /* BPTControllerEvents_Tests.m */,
 				F25BEE6B194B6F7700C33B87 /* Supporting Files */,
 			);
 			path = iBrigaPorTelhado_PrototipoTests;
@@ -229,7 +229,7 @@
 		F29E0BE9194B719A00635CAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB398607195B4CD6001D5C70 /* Images.xcassets */,
+				F25BEE5D194B6F7700C33B87 /* Images.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -267,8 +267,6 @@
 				F29E0C06194B75B000635CAD /* BPTCharacter.m */,
 				F29E0C08194B75D900635CAD /* BPTScenarioObject.h */,
 				F29E0C09194B75D900635CAD /* BPTScenarioObject.m */,
-				BB290C3E195B499900F44CF0 /* BPTComponentSpriteNode.h */,
-				BB290C3F195B499900F44CF0 /* BPTComponentSpriteNode.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,8 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25BEE5E194B6F7700C33B87 /* Images.xcassets in Resources */,
 				F25BEE54194B6F7700C33B87 /* Main_iPad.storyboard in Resources */,
-				BB398608195B4CD6001D5C70 /* Images.xcassets in Resources */,
 				F25BEE51194B6F7700C33B87 /* Main_iPhone.storyboard in Resources */,
 				F25BEE48194B6F7700C33B87 /* InfoPlist.strings in Resources */,
 			);
@@ -396,7 +394,6 @@
 				F29E0BE7194B717B00635CAD /* GameStateManager.m in Sources */,
 				F2DD711B194B7A4F00BEDBC5 /* BPTGameController.m in Sources */,
 				F29E0BEF194B73C400635CAD /* BPTControllerEvents.m in Sources */,
-				BB290C40195B499900F44CF0 /* BPTComponentSpriteNode.m in Sources */,
 				F29E0C0A194B75D900635CAD /* BPTScenarioObject.m in Sources */,
 				F29E0BF8194B74C600635CAD /* BPTControllerMap.m in Sources */,
 				F29E0C04194B757200635CAD /* BPTGameComponent.m in Sources */,
@@ -413,7 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25BEE71194B6F7700C33B87 /* iBrigaPorTelhado_PrototipoTests.m in Sources */,
+				5B897C5A195B621800AE8C98 /* BPTMapController_Tests.m in Sources */,
+				5B897C5C195B6AF800AE8C98 /* BPTControllerEvents_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

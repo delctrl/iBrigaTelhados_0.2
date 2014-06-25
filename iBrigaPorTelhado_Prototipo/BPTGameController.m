@@ -36,6 +36,7 @@
 }
 
 - (void) delegateEvent: (CGPoint) touch {
+<<<<<<< HEAD
     NSDictionary *objectReceived = [self.eventsController receiveTouch: touch];
     
     if ([objectReceived objectForKey:@"0"] != nil) {
@@ -63,5 +64,8 @@
             NSLog(@"ok");
         }
     }
+=======
+    [self.eventsController receiveTouch: touch];
+>>>>>>> FETCH_HEAD
 }
 @end

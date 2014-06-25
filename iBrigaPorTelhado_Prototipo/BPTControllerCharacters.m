@@ -28,7 +28,7 @@
 - (void) createPlayerCharacters {
     self.playerCharacters = [[NSMutableDictionary alloc] init];
     for (int i = 0; i < 3 ; i++){
-        BPTCharacter *character = [[BPTCharacter alloc] initWithTexture:@"chocobo.png"];
+        BPTCharacter *character = [[BPTCharacter alloc] initWithTexture:@"hunter.png"];
         character.identifier = 1;
         int x = i;
         int y = i;

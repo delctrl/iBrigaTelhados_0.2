@@ -4,4 +4,3 @@
 #import "BPTGameComponent.h"
 #import "BPTCharacter.h"
 #import "BPTScenarioObject.h"
-#import "BPTComponentSpriteNode.h"
