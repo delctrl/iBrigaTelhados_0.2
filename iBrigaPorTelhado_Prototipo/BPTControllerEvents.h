@@ -13,5 +13,5 @@
 @property BPTMap *map;
 
 - (id) initWithMap: (BPTMap *) map;
-- (void) receiveTouch: (CGPoint) touch;
+- (NSDictionary *) receiveTouch: (CGPoint) touch;
 @end

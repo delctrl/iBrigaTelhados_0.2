@@ -18,31 +18,34 @@
     return self;
 }
 
-- (void) receiveTouch: (CGPoint) touch {
-    NSLog([self checkWhatIsTouched:touch]);
+- (NSDictionary *) receiveTouch: (CGPoint) touch {
+    return [self checkWhatIsTouched: touch];
 }
 
-- (NSString *) checkWhatIsTouched: (CGPoint) touch {
+- (NSDictionary *) checkWhatIsTouched: (CGPoint) touch {
     NSMutableDictionary *characterDictionary = self.map.charactersAndObjectsMatrix;
     NSMutableDictionary *tilesDictionary = self.map.tileSpritesMatrix;
     SKSpriteNode *auxSprite;
 
+    NSDictionary *dictionaryReturned;
     for (int x = 0; x < 5; x++) {
         for (int y = 0; y < 5; y++) {
             BPTCharacter *characterAux = [characterDictionary objectForKey: [NSString stringWithFormat: @"%i%i", x, y]];
             if (characterAux.identifier == 1) {
                 auxSprite = characterAux.sprite;
                 if (CGRectContainsPoint(auxSprite.frame, touch)) {
-                    return @"character";
+                    dictionaryReturned = [[NSDictionary alloc] initWithObjects:@[characterAux] forKeys:@[@"1"]];                  return dictionaryReturned;
                 }
             }
             SKSpriteNode *tileAux = [tilesDictionary objectForKey: [NSString stringWithFormat: @"%i%i", x,y]];
             if (CGRectContainsPoint(tileAux.frame, touch)) {
-                return @"tile";
+                dictionaryReturned = [[NSDictionary alloc] initWithObjects:@[tileAux] forKeys:@[@"0"]];
+                return dictionaryReturned;
             }
         }
     }
     
     return nil;
 }
+
 @end

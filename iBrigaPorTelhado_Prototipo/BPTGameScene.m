@@ -14,6 +14,7 @@
     if (self = [super initWithSize:size]) {
         gameController = [[BPTGameController alloc] init];
         [self createMap];
+        [self resetZPosition];
     }
     return self;
 }
@@ -52,4 +53,28 @@
     
 }
 
+- (void) resetZPosition {
+    NSMutableArray * allComponents = [[NSMutableArray alloc] init];
+    
+    for (SKSpriteNode *node in self.children) {
+        if ([node isMemberOfClass: [BPTComponentSpriteNode class]]) {
+            [allComponents addObject: node];
+        }
+    }
+    
+    [allComponents sortUsingComparator: ^NSComparisonResult(BPTComponentSpriteNode *char1, BPTComponentSpriteNode *char2) {
+        if (char1.position.y < char2.position.y)
+            return (NSComparisonResult)NSOrderedAscending;
+        if (char1.position.y > char2.position.y)
+            return (NSComparisonResult)NSOrderedDescending;
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    
+    int z = allComponents.count;
+    
+    for (BPTComponentSpriteNode *node in allComponents) {
+        [node setZPosition: z];
+        z--;
+    }
+}
 @end
