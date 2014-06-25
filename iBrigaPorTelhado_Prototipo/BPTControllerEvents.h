@@ -14,4 +14,5 @@
 
 - (id) initWithMap: (BPTMap *) map;
 - (void) receiveTouch: (CGPoint) touch;
+- (NSString *) checkWhatIsTouched: (CGPoint) touch;
 @end
