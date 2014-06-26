@@ -20,6 +20,7 @@
 @property BPTControllerVision *visionController;
 @property BPTControllerMap *mapController;
 @property BPTControllerEvents *eventsController;
+@property BPTControllerAnimation *animationController;
 
 
 - (void) delegateEvent: (CGPoint) touch;

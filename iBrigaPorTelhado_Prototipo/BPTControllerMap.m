@@ -59,7 +59,8 @@
 }
 
 - (BOOL) checkIfMovementIsPossibleForCharacter: (CGPoint) characterPos ToTile: (CGPoint) tilePos {
-    if (tilePos.x == characterPos.x+1 || tilePos.x == characterPos.x-1 || tilePos.y == characterPos.y+1 || tilePos.y == characterPos.y-1) {
+    if ((tilePos.x == characterPos.x+1 && tilePos.y == characterPos.y) || (tilePos.x == characterPos.x-1 && tilePos.y == characterPos.y) ||
+        (tilePos.x == characterPos.x && tilePos.y == characterPos.y+1) || (tilePos.x == characterPos.x && tilePos.y == characterPos.y-1)) {
         if ([self checkIfTileIsEmpty: tilePos]) {
             return YES;
         }
@@ -74,4 +75,11 @@
     }
     return NO;
 }
+
+- (void) moveComponentAtOrigin: (CGPoint) origin ToDestination: (CGPoint) destination {
+    BPTGameComponent *componentAux = [self.map.componentMatrix objectForKey: [NSString stringWithFormat: @"%i%i", (int)origin.x, (int)origin.y]];
+    [self.map.componentMatrix removeObjectForKey: [NSString stringWithFormat: @"%i%i", (int)origin.x, (int)origin.y]];
+    [self.map.componentMatrix setObject: componentAux forKey: [NSString stringWithFormat: @"%i%i", (int)destination.x, (int)destination.y]];
+}
+
 @end

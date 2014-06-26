@@ -14,7 +14,8 @@
     if (self = [super initWithSize:size]) {
         gameController = [[BPTGameController alloc] init];
         [self createMap];
-        [self resetZPosition];
+        [self resetZPositionOfAll: @"tiles"];
+        [self resetZPositionOfAll: @"components"];
     }
     return self;
 }
@@ -47,18 +48,34 @@
     if (gameController.mapController.updateNeeded) {
         [self updateMap];
     }
+    
+    if (gameController.characterController.updateNeeded) {
+        [self updateCharacter];
+    }
 }
 
 - (void) updateMap {
     
 }
 
-- (void) resetZPosition {
+
+- (void) updateCharacter {
+    
+}
+
+
+- (void) resetZPositionOfAll: (NSString *) typeOfInterface {
     NSMutableArray * allComponents = [[NSMutableArray alloc] init];
     
     for (SKSpriteNode *node in self.children) {
-        if ([node isMemberOfClass: [BPTComponentSpriteNode class]]) {
-            [allComponents addObject: node];
+        if ([typeOfInterface isEqualToString:@"components"]) {
+            if ([node isMemberOfClass: [BPTComponentSpriteNode class]]) {
+                [allComponents addObject: node];
+            }
+        } else if ([typeOfInterface isEqualToString:@"components"]) {
+            if (![node isMemberOfClass: [BPTComponentSpriteNode class]]) {
+                [allComponents addObject: node];
+            }
         }
     }
     

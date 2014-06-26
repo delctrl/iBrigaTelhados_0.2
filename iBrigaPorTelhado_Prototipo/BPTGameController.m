@@ -19,6 +19,7 @@
         [self.mapController addPlayerCharactersToMap:self.characterController.playerCharacters];
         
         self.eventsController = [[BPTControllerEvents alloc] initWithMap: self.mapController.map];
+        self.animationController = [[BPTControllerAnimation alloc] init];
         //Não esta sendo usado
 //        self.player = [[BPTPlayer alloc] init];
 //        self.vision = [[BPTVision alloc] init];
@@ -54,14 +55,16 @@
     }
 }
 
-- (void) tileReceived: (SKSpriteNode *) tile{
+- (void) tileReceived: (SKSpriteNode *) tile {
     if (self.characterController.characterSelected != nil) {
         CGPoint characterPos = [self.mapController getComponentPosAtMatrix: self.characterController.characterSelected];
         CGPoint tilePos = [self.mapController getTilePosAtMatrix: tile];
         
         if ([self.mapController checkIfMovementIsPossibleForCharacter:characterPos ToTile:tilePos]) {
-            NSLog(@"ok");
+            [self.mapController moveComponentAtOrigin:characterPos ToDestination:tilePos];
+            [self.animationController animateRawMovementOfCharacter: self.characterController.characterSelected toTile: tile];
         }
     }
+    self.characterController.characterSelected = nil;
 }
 @end

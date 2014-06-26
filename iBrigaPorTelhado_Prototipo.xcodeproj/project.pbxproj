@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB20D7DC195C9D9F005881CA /* BPTControllerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB20D7DB195C9D9F005881CA /* BPTControllerAnimation.m */; };
 		BB290C40195B499900F44CF0 /* BPTComponentSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB290C3F195B499900F44CF0 /* BPTComponentSpriteNode.m */; };
 		BB398608195B4CD6001D5C70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB398607195B4CD6001D5C70 /* Images.xcassets */; };
 		F25BEE3C194B6F7700C33B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BEE3B194B6F7700C33B87 /* Foundation.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB20D7DA195C9D9F005881CA /* BPTControllerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTControllerAnimation.h; sourceTree = "<group>"; };
+		BB20D7DB195C9D9F005881CA /* BPTControllerAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTControllerAnimation.m; sourceTree = "<group>"; };
 		BB290C3E195B499900F44CF0 /* BPTComponentSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTComponentSpriteNode.h; sourceTree = "<group>"; };
 		BB290C3F195B499900F44CF0 /* BPTComponentSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTComponentSpriteNode.m; sourceTree = "<group>"; };
 		BB398607195B4CD6001D5C70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -247,7 +250,8 @@
 				F29E0BF4194B749F00635CAD /* BPTControllerVision.m */,
 				F29E0BF6194B74C600635CAD /* BPTControllerMap.h */,
 				F29E0BF7194B74C600635CAD /* BPTControllerMap.m */,
-				F2944019194F8143008C4A32 /* BPTUpdateManagerProtocol.h */,
+				BB20D7DA195C9D9F005881CA /* BPTControllerAnimation.h */,
+				BB20D7DB195C9D9F005881CA /* BPTControllerAnimation.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +259,7 @@
 		F29E0BEB194B720B00635CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2944019194F8143008C4A32 /* BPTUpdateManagerProtocol.h */,
 				F29E0BF9194B754100635CAD /* BPTPlayer.h */,
 				F29E0BFA194B754100635CAD /* BPTPlayer.m */,
 				F29E0BFC194B754F00635CAD /* BPTVision.h */,
@@ -404,6 +409,7 @@
 				F25BEE4E194B6F7700C33B87 /* AppDelegate.m in Sources */,
 				F29E0BFB194B754100635CAD /* BPTPlayer.m in Sources */,
 				F29E0BF2194B747200635CAD /* BPTControllerCharacters.m in Sources */,
+				BB20D7DC195C9D9F005881CA /* BPTControllerAnimation.m in Sources */,
 				F25BEE4A194B6F7700C33B87 /* main.m in Sources */,
 				F29E0C01194B756200635CAD /* BPTMap.m in Sources */,
 			);

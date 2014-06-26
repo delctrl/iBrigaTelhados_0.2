@@ -21,4 +21,5 @@
 
 - (CGPoint) getTilePosAtMatrix: (SKSpriteNode *) tile;
 - (CGPoint) getComponentPosAtMatrix: (BPTGameComponent *) component;
+- (void) moveComponentAtOrigin: (CGPoint) origin ToDestination: (CGPoint) destination;
 @end
